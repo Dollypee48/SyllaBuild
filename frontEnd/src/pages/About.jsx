@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">About SyllaBuild</h1>
+        <h1 className="text-4xl font-bold text-amber-900 mb-4">About SyllaBuild</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           A powerful tool for educators and content creators to design, organize, and structure their courses.
         </p>
@@ -71,14 +71,14 @@ const About = () => {
 
       <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">The Team</h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-amber-600 mb-6">
           SyllaBuild is developed by a small team of educators and developers passionate about improving the course
           creation process. We're constantly working to add new features and improve the user experience.
         </p>
         <div className="flex flex-wrap gap-4">
-          <a href="#" className="text-indigo-600 hover:text-indigo-800">Contact Us</a>
-          <a href="#" className="text-indigo-600 hover:text-indigo-800">Feature Requests</a>
-          <a href="#" className="text-indigo-600 hover:text-indigo-800">Report an Issue</a>
+          <a href="#" className="text-amber-600 hover:text-amber-800">Contact Us</a>
+          <a href="#" className="text-amber-600 hover:text-amber-800">Feature Requests</a>
+          <a href="#" className="text-amber-600 hover:text-amber-800">Report an Issue</a>
         </div>
       </div>
     </div>
