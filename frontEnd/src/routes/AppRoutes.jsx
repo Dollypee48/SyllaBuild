@@ -6,6 +6,7 @@ import ExportPage from '../pages/ExportPage'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
 import PrivateRoute from './PrivateRoute'
+import About from '../pages/About'
 
 const AppRoutes = () => {
   return (
