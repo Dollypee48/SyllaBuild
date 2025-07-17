@@ -12,7 +12,7 @@ const CourseEditor = () => {
     currentCourse, 
     updateCourse, 
     addModule, 
-    deleteCourse  // Make sure this is destructured from useCourse
+    deleteCourse  
   } = useCourse();
   
   const [courseTitle, setCourseTitle] = useState('');
