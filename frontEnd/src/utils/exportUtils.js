@@ -4,7 +4,7 @@ import 'jspdf-autotable'
 export const exportToPDF = (course) => {
   const doc = new jsPDF()
   
-  // Add title
+  
   doc.setFontSize(20)
   doc.text(course.title, 14, 20)
   
@@ -15,7 +15,7 @@ export const exportToPDF = (course) => {
     doc.text(splitDesc, 14, 30)
   }
   
-  // Add modules and lessons
+ 
   let yPosition = 50
   course.modules.forEach((module, moduleIndex) => {
     doc.setFontSize(14)
