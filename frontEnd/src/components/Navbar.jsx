@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { FiLogOut, FiUser } from 'react-icons/fi';
+import { FiLogOut, FiUser, FiInfo } from 'react-icons/fi';
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth();
@@ -8,10 +8,9 @@ const Navbar = () => {
 
   const handleLogout = () => {
     logout(); 
-    setTimeout(()=> {
+    setTimeout(() => {
       navigate('/');  
     })        
-      
   };
 
   return (
@@ -28,6 +27,15 @@ const Navbar = () => {
 
           {/* Navigation */}
           <div className="flex items-center gap-6">
+            {/* About Link - Visible to all users */}
+            <Link
+              to="/about"
+              className="flex items-center text-sm font-medium text-gray-700 hover:text-amber-700 transition"
+            >
+              <FiInfo className="mr-1 text-lg" />
+              About
+            </Link>
+
             {currentUser ? (
               <>
                 <span className="flex items-center text-sm font-medium text-gray-700">
